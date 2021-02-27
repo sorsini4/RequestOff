@@ -1,0 +1,50 @@
+*{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input {
+    height: 40px;
+    font-size: 12pt;
+}
+
+body {
+    background-color: #7070db;
+    margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #c38d9e;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #c38d9e;
+}
+
+h1 {
+    font-family: "Times New Roman", serif;
+    color: rgb(198, 196, 214);
+    height: 70px;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    color: Black;
+}
+
+h4 {
+    font-family: "Arial", sans-serif;
+    color: #c62d42;
+}

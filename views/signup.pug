@@ -1,0 +1,50 @@
+extends signup_login_layout
+block content
+    h3 Please fill out the following information
+    h4 #{error}
+    br
+    form(method = "POST")
+        input(name = 'fName', placeholder = 'First Name', required, style = "width:207.5px")
+        |
+        |
+        |
+        |
+        |
+        |
+        |
+        input(name = 'lName', placeholder = 'Last Name', required, style = "width:207.5px")
+        br
+        br
+        input(name = 'company', placeholder = 'Company', required, style = "width:415px")    
+        br
+        br
+        input(name = 'position', placeholder = 'Position', required, style = "width:415px")
+        br
+        br
+        input(type = 'number', name = 'yearsAtCompany', required, placeholder = 'Years At Company', min = "0", step = "1", style = "width:415px")
+        br
+        br
+        input(name = 'email', placeholder = 'Email', required, style = "width:415px")
+        br
+        br
+        input(name = 'userName', placeholder = 'Username', required, style = "width:415px")
+        br
+        br
+        input(type = 'password', name = 'password', required, placeholder = 'Password', style = "width:415px")
+        br
+        br
+        input(type = 'password', name = 'passwordAgain', required, placeholder = 'Password', style = "width:415px")
+        br
+        br
+        input(id = 'button', type = "submit", value = "Submit!")
+        |
+        |
+        |
+        |
+        input(id = 'button', type = "reset", value = "Clear!")
+        br
+        br
+        br
+
+
+

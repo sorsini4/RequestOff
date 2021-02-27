@@ -1,0 +1,46 @@
+extends layout
+block content
+    head
+        script
+            include show.js
+    body 
+        h2 Request Off Form for #{trustedUser._id}
+        h3 Please fill out the following information
+        h4 #{error}
+        container 
+        form(method="POST")
+            p(class = 'inputs') 
+                br
+                br
+                |Start Date: 
+                |
+                |
+                input(type = "date", id = "startDate", name="startDate", placeholder = "mm/dd/yyyy", required)
+                br
+                br
+                div(style = "padding-left: 20px")
+                    br
+                    br
+                    |End Date:
+                    |
+                    |
+                    input(type = "date", id = "endDate", name = "endDate", placeholder = "mm/dd/yyyy" required)
+                br
+                br
+                br
+                div(style = "padding-left: 20px")
+                    |Hours off: 
+                    |
+                    |
+                    input(type = "number", id = "hours", name = "hours", step = "4", min = "0", max = "8", required)
+                br
+                br
+                br
+                div(style = "padding-left: 20px")
+                    input(type="submit", value="Insert!")
+                    |   
+                    |
+                    |
+                    |
+                    input(type="reset", value="Clear!")
+

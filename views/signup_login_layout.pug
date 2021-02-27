@@ -1,0 +1,30 @@
+doctype html
+html(lan="en")
+    head
+        style
+            include signup_login_styles.css
+        	
+        title= "Request Off Web Server"
+
+    body
+    div(class = 'topnav')
+        a(href = '/home') Home
+        |
+        |
+        |
+        a(href = '/login') Login
+        |
+        |
+        |
+        a(href = '/signup') Signup
+        if trustedUser
+            a(href = '/insertHours') Insert Hours
+            |
+            |
+            |
+            a(href = '/user/' + trustedUser._id) User
+
+    h1 The Calendar Express Web Server
+
+    block content
+        

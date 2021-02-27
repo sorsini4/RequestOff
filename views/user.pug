@@ -1,0 +1,18 @@
+extends layout
+block content
+  body
+    if trustedUser
+      h1 #{trustedUser._id}
+      
+        h2 #{trustedUser.lastName}, #{trustedUser.firstName}
+            p Currently employed at #{trustedUser.company}, under the job title, #{trustedUser.position}.
+            p Years of service at #{trustedUser.company}, #{trustedUser.yearsAtCompany}
+        
+        h3 List of all requested days off
+            #daysOff
+            each item in daysOff
+                #date
+                br
+                |#{item.startDate} until #{item.endDate} is requested off, along with the amount of hours requested off: #{item.hours}        
+                br
+                |#{monthNameStart}

@@ -1,0 +1,81 @@
+input {
+    height: 40px;
+    font-size: 12pt;
+}
+
+body {
+    background-color: #41b3a3;
+    margin: 0;
+}
+ 
+.topnav {
+    overflow: hidden;
+    background-color: #c38d9e;
+}
+ 
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #c38d9e;
+}
+
+h1 {
+    padding-left: 20px;
+    font-family: "Times New Roman", serif;
+    color: rgb(198, 196, 214);
+    font-variant: small-caps;
+}
+
+h2 {
+    padding-left: 20px;
+    font-family: fantasy;
+    color: Black;
+    font-size: 23px;
+}
+
+h3 {
+    padding-left: 20px;
+    font-family: "Arial", sans-serif;
+    color: Black;
+}
+
+h4 {
+    padding-left: 20px;
+    font-family: "Arial", sans-serif;
+    color: #c62d42; 
+}
+
+p.inputs {  
+    padding-left: 20px;
+}
+
+p.text {
+    position: top center;
+    font-size: 23px;
+}
+
+div.explain {
+    box-sizing: border-box;
+    width: 1290px;
+    height: 375px;
+    border: 1px #c38d9e;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-left: 75px;
+    font-family: "Times New Roman", serif;
+    color: black;
+    background: url(office.jpg) center;
+}
+
+

@@ -1,0 +1,23 @@
+extends signup_login_layout
+block content
+    h3 Please login
+    h4 #{error}
+    form(method = "POST")
+        input(name = "userName", placeholder = 'Username' required)
+        br
+        br
+        input(type = "password", name = "password", placeholder = 'Password', required)
+        br
+        br
+        input(type = "submit" value = "Login")
+        |
+        |
+        |
+        |
+        input(type = "reset" value = "Clear!") 
+        br
+        br
+        br
+        |Don't have an account with us? 
+        |
+        a(href = '/signup') Signup
